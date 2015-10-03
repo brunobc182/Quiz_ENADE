@@ -13,14 +13,102 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eG2-lz-QUH" userLabel="ViewBackground">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="580"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quantos anos vive em média um elefante africano?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3n-tk-ynZ">
+                                        <rect key="frame" x="8" y="22" width="304" height="96"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="elefante" translatesAutoresizingMaskIntoConstraints="NO" id="ltd-kO-FTQ">
+                                        <rect key="frame" x="8" y="126" width="304" height="210"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1S-KA-Q1B">
+                                        <rect key="frame" x="8" y="384" width="304" height="34"/>
+                                        <color key="backgroundColor" red="0.61122073006073885" green="0.90731676139000161" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="80 Anos">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chooseAnswer1:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HWg-Lm-C94"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qze-PC-91u">
+                                        <rect key="frame" x="8" y="434" width="304" height="34"/>
+                                        <color key="backgroundColor" red="0.6112207301" green="0.90731676139999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="120 Anos">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chooseAnswer2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MdW-iC-qKL"/>
+                                        </connections>
+                                    </button>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tu5-Kd-dav" userLabel="ViewFeedback">
+                                        <rect key="frame" x="8" y="86" width="304" height="290"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Feedback" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PeV-2k-d0J">
+                                                <rect key="frame" x="8" y="33" width="288" height="94"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGc-DM-Dby">
+                                                <rect key="frame" x="0.0" y="225" width="304" height="34"/>
+                                                <color key="backgroundColor" red="0.6112207301" green="0.90731676139999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Botão Feedback">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnFeedback:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Yla-nX-o4Z"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.61391181590260002" green="1" blue="0.61646355177319334" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nla-qN-VsP">
+                                        <rect key="frame" x="8" y="483" width="304" height="34"/>
+                                        <color key="backgroundColor" red="0.6112207301" green="0.90731676139999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="140 Anos">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chooseAnswer3:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iRi-XU-v2i"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.9905970146981693" blue="0.56636621159192047" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="btnAnswer2" destination="Qze-PC-91u" id="bfl-8N-Ron"/>
+                        <outlet property="btnAnswer3" destination="nla-qN-VsP" id="05M-XG-mNA"/>
+                        <outlet property="btnAnswers1" destination="e1S-KA-Q1B" id="LTb-Ao-n7X"/>
+                        <outlet property="btnFeedback" destination="HGc-DM-Dby" id="08J-a8-LL0"/>
+                        <outlet property="chooseAnswer3" destination="nla-qN-VsP" id="h47-sp-lhc"/>
+                        <outlet property="imgQuestion" destination="ltd-kO-FTQ" id="6OM-vx-sbk"/>
+                        <outlet property="lbFeedback" destination="PeV-2k-d0J" id="igP-fg-W03"/>
+                        <outlet property="lbQuestion" destination="h3n-tk-ynZ" id="r1r-vU-kEj"/>
+                        <outlet property="viewFeedback" destination="tu5-Kd-dav" id="Ow3-TG-stE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="592" y="418"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="elefante" width="1600" height="1200"/>
+    </resources>
 </document>
