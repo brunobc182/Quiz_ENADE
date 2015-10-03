@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -12,15 +12,98 @@
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" userLabel="ViewBackground">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2u3-Xl-VPQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="580"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quantos anos vive em média um elefante africano?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCO-M6-y1a">
+                                        <rect key="frame" x="8" y="42" width="304" height="77"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="elefante" highlightedImage="elefante" translatesAutoresizingMaskIntoConstraints="NO" id="TXz-6i-Hdw">
+                                        <rect key="frame" x="8" y="127" width="304" height="203"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQf-Le-YxT">
+                                        <rect key="frame" x="14" y="361" width="291" height="49"/>
+                                        <color key="backgroundColor" red="0.46633838373105896" green="0.85827838050149086" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="80 anos">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chooseAnswer1:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cqh-yw-O4g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSf-xy-zwP">
+                                        <rect key="frame" x="14" y="429" width="291" height="49"/>
+                                        <color key="backgroundColor" red="0.46633838370000003" green="0.85827838050000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="120 anos">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chooseAnswer2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="clw-qW-kGe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lap-Ty-m7c">
+                                        <rect key="frame" x="15" y="496" width="291" height="49"/>
+                                        <color key="backgroundColor" red="0.46633838370000003" green="0.85827838050000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="140 anos">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chooseAnswer3:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ajW-Nw-Fvi"/>
+                                        </connections>
+                                    </button>
+                                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CsY-0y-TuK" userLabel="ViewFeedBack">
+                                        <rect key="frame" x="8" y="127" width="304" height="211"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Feedback" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMy-if-bPY">
+                                                <rect key="frame" x="8" y="18" width="288" height="86"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0b-Hs-cUB">
+                                                <rect key="frame" x="13" y="167" width="283" height="44"/>
+                                                <color key="backgroundColor" red="0.46633838370000003" green="0.85827838050000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Botão Feedback">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="btnFeedback:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Lpb-ig-mZ9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.15362298755885462" green="1" blue="0.45810008658827717" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.87394199098300474" blue="0.19632314974178144" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="btnAnswer1" destination="NQf-Le-YxT" id="U05-od-MQ0"/>
+                        <outlet property="btnAnswer2" destination="zSf-xy-zwP" id="f8I-ZZ-L8w"/>
+                        <outlet property="btnAnswer3" destination="lap-Ty-m7c" id="Yp8-05-wzk"/>
+                        <outlet property="btnFeedback" destination="h0b-Hs-cUB" id="YzZ-E8-Yxd"/>
+                        <outlet property="imgQuestion" destination="TXz-6i-Hdw" id="Zua-ta-ubu"/>
+                        <outlet property="lbFeedback" destination="UMy-if-bPY" id="IJS-N1-7w9"/>
+                        <outlet property="lbQuestion" destination="WCO-M6-y1a" id="nbg-pw-Mav"/>
+                        <outlet property="viewFeedback" destination="CsY-0y-TuK" id="3qr-HV-deV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="364" y="449"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="elefante" width="1600" height="1200"/>
+    </resources>
 </document>
