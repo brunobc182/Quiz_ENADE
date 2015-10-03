@@ -409,6 +409,7 @@
 				769964391BC009CF00DDD632 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7699643A1BC009CF00DDD632 /* Build configuration list for PBXNativeTarget "Quiz_ENADETests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +418,7 @@
 				7699643C1BC009CF00DDD632 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
